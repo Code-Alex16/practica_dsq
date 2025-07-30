@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Server</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Página de Registro</h1>
+    </header>
+
+    <main>
+        <div class="container" id="registerContainer">
+            <h2>Registro</h2>
+            <input type="text" id="regUser" placeholder="Usuario" required>
+            <input type="password" id="regPass" placeholder="Contraseña" required>
+            <button onclick="register()">Registrar</button>
+            <p>Ya tienes cuenta? <a href="/index.html">Inicia Sesion</a></p>
+        </div>
+
+        <div class="container" id="welcomeContainer" style="display:none;">
+            <h2>Bienvenido, <span id="welcomeUser"></span>!</h2>
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+
+    <div>
+        <h3>
+            <p class="alumnos">Alexander Jorge Bastidas Ceron</p>
+            <p class="alumnos">Dylan Manuel Franco Santana</p>
+        </h3>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
