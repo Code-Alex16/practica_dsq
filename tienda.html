@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Bienvenido a la Tienda</h1>
+    <p id="loggedUser" style="text-align: center; color: #666;"></p>
+    <div>
+      <button class="logout-btn" onclick="logout()">Cerrar Sesión</button>
+    </div>
+
+  </header>
+
+  <main>
+    <div class="products-grid" id="productsContainer">
+      <!-- Aqui apareceran los productos agregados -->
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      <h3>
+        <p class="alumnos">Alexander Jorge Bastidas Ceron</p>
+        <p class="alumnos">Dylan Manuel Franco Santana</p>
+      </h3>
+    </div>
+  </footer>
+  <!-- Modal de producto agregado -->
+  <dialog id="modalAgregado">
+    <p id="modalText">Producto agregado a la compra.</p>
+    <button class="modal-ok-btn" onclick="cerrarModal()">OK</button>
+  </dialog>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

@@ -82,3 +82,108 @@
     color: #555;
     text-align: center;
   }
+/* Contenedor general */
+#productsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Tarjeta del producto */
+.product-card {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+.product-card>p h3 {
+    margin: 0;
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Imagen o fondo del producto */
+.product-img {
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Nombre del producto como texto si no hay imagen */
+.product-name {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+
+/* Contenido inferior */
+.product-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.add-btn {
+    margin-top: 8px;
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 30px;
+    border: none;
+    border-radius: 10px;
+    background: #333;
+    color: white;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 999;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.logout-btn {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    background-color: #e53935;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: background 0.3s ease;
+    width: 120px;
+    height: 40px;
+}
+
+.logout-btn:hover {
+    background-color: #c62828;
+}
